@@ -261,10 +261,7 @@ margin-bottom: 25px;
       text-align: right;
     }
 
-    .resultadoClima{
-      display: flex;
-      justify-content: center;
-       
+    .resultadoClima{       
       padding: 20px;
       text-align: center;
       align-items: center;
@@ -283,14 +280,14 @@ margin-bottom: 25px;
     }
 
     .inputResultClima{
-      opacity: 0px;
       font-family:var(--fonte);
       font-size: 20px;
       font-weight: 800;
       line-height: 24.2px;
       text-align: center;
       color:#1F1F1F;
-      border: 0px;    
+      border: 0px; 
+      width: 100%;   
     }
 
     .footer{

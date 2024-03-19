@@ -49,14 +49,13 @@ async function GetCep(){
         document.getElementById('rua').value = dataCep.logradouro;
         document.getElementById('bairro').value = dataCep.bairro;
         document.getElementById('localidade').value = dataCep.localidade;
-        document.getElementById('temperatura').value = dataClima.current.temperature_2m;
+        document.getElementById('temperatura').value = (("Previsão de tempo de acordo com a região: ") + (dataClima.current.temperature_2m) + ("°C"));
         window.location.href='#ancora';
        } catch (erro){
         alert(erro.menssage);
        } 
       } 
 }
-
 //Função formulário section
 function Formulario(){
   return (
@@ -121,9 +120,7 @@ function TituloResultadoClima(){
 function ResultadoClima(){
   return(
     <div className="resultadoClima">
-            <h2>Temperatura é de</h2>
             <input className="inputResultClima" type="text" readonly id="temperatura"></input>
-            <h2>C°</h2>
     </div>
   )
 }
