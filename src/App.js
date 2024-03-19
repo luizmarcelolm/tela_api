@@ -27,7 +27,7 @@ function Section(){
   )
 }
 
-//Função obter CEP_CLIMA
+//Função obter CEP_CLIMA.
 async function GetCep(){
   const cep = document.getElementById("cep").value;
   const nome = document.getElementById("nome").value;
