@@ -1,38 +1,321 @@
+:root{
+  --azul:#0C70F2;
+  --cinza: #F2F2F2;
+  --fonte: 'Inter';
+}
+
+
 .App {
-  text-align: center;
+ align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color:var(--cinza);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header{
+  background-color:var(--azul);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 33vw;
+  width: 100%;
+  height: 70px;
+  font-family: var(--fonte);
+  grid-template-columns: 75% 1fr 1fr;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+  padding-left: 60px;
+  padding-top: 5px;
+  text-align: left;
+  font: 50px;
+  font-family: Inter;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 60.51px;
+  text-align: left;
+
 }
+
+.lista{
+  padding-top: 20px;
+  list-style-type: none;
+  padding-right: 20px;
+  font-family:var(--fonte);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 30.26px;
+  text-align: left;
+}
+
+.section{
+  padding-top: 80px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 75% 1fr;
+}
+
+.sectionTitulo{
+  padding-top: 40px;
+  padding-left: 30%;
+  color: black;
+  font-family:var(--fonte);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60.51px;
+  text-align: left;
+}
+
+.containner{
+  margin-top: 100px;
+  background-color:#FFFFFF;
+  color:black;
+  width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:30px;
+  padding: 40px;
+}
+
+.label{
+font-family:var(--fonte);
+ font-size: 20px;
+ font-weight: 400px;
+ text-align: left;
+}
+
+.input{
+width: 500px;
+height: 45px;
+gap: 0px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+background-color: #F2F2F2E5;
+border: 0px;
+padding-left: 15px;
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+.input::placeholder{
+  color: #39393980;
+}
+
+.input1{
+width: 230px;
+height: 45px;
+gap: 0px;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+background-color: #F2F2F2E5;
+border: 0px;
+padding-left: 15px;
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+.input1::placeholder{
+  color:#39393980;
+}
+
+.input2{
+  width: 230px;
+  height: 45px;
+  gap: 0px;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 0px;
+  background-color: #F2F2F2E5;
+  border: 0px;
+  padding-left: 15px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  }
+
+  .input2::placeholder{
+    color:#39393980;
+  }
+
+  .button{
+   width: 510px;
+   height: 45px;
+   gap: 0px;
+   border-radius: 10px 10px 10px 10px;
+   opacity: 0px;
+   background-color:#0C70F2E5;
+   box-shadow: 0px 6px 4px 0px #0C70F240;
+   border: 0px;
+   color:#FFFFFF;
+   font-family:var(--fonte);
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 38.73px;
+   text-align: center;
+   margin-top:50px;
+  cursor: pointer;
+  }
+
+  .button:hover{
+    transform: translateY(-3px);
+    transition-duration: 0.5s;
+}
+
+  .tituloResultadoCep{
+  align-items: center;
+  padding-top: 80px;
+  display: grid;
+  grid-auto-flow: column;
+  }
+
+  .tituloCep{
+    padding-top: 40px;
+    color: black;
+    font-family:var(--fonte);
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60.51px;
+    text-align: right;
+  }
+
+  .menuResultadoCep{
+  text-align: center;
+  }
+
+  .resuldadoCepSup{
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1024px;
+    height: 72px;
+    border-radius: 30px 30px 0px 0px;
+    opacity: 0px;
+    background-color:#0C70F2;
+    color:#FFFFFF;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .resuldadoCepInf{
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1024px;
+    height: 72px;
+    border-radius: 0px 0px 30px 30px;
+    opacity: 0px;
+    background-color:white;
+    color:#1F1F1F;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24.2px;
+    text-align: left;
+  }
+
+  .inputResultCepInf{
+    width: 200px;
+    height: 26px;
+    gap: 0px;
+    opacity: 0px;
+    font-family:var(--fonte);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24.2px;
+    text-align: left;
+    color:#1F1F1F;
+    border: 0px;    
+  }
+
+  .tituloResultadoClima{
+    align-items: center;
+    padding-top: 80px;
+    display: grid;
+    grid-auto-flow: column;
+    }
+  
+    .tituloClima{
+      padding-top: 40px;
+      color: black;
+      font-family:var(--fonte);
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 60.51px;
+      text-align: right;
+    }
+
+    .resultadoClima{
+      display: flex;
+      justify-content: center;
+       
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      height: auto;
+      gap: 0px;
+      border-radius: 30px 30px 30px 30px;
+      border: 1px 0px 0px 0px;
+      opacity: 0px;
+      background-color: #FFFFFF;
+      border: 1px solid #0C70F2;
+      color:#1F1F1F;
+    }
+
+    .inputResultClima{
+      opacity: 0px;
+      font-family:var(--fonte);
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24.2px;
+      text-align: center;
+      color:#1F1F1F;
+      border: 0px;    
+    }
+
+    .footer{
+      margin-top: 150px;
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns:85% 1fr 0.5fr;
+      width: auto;
+      height: 70px;
+      gap: 0px;
+      opacity: 0px;
+      background-color: #0C70F2;
+      list-style-type: none;
+      text-align: right;
+      align-items: center;
+      
+    }
+
+  
+
+
+
+
+
+
+
+
+
