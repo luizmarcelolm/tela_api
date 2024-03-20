@@ -100,9 +100,7 @@ font-family:var(--fonte);
 .input{
 width: 500px;
 height: 45px;
-gap: 0px;
 border-radius: 10px 10px 10px 10px;
-opacity: 0px;
 background-color: #F2F2F2E5;
 border: 0px;
 padding-left: 15px;
