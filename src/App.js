@@ -100,7 +100,7 @@ function Formulario(){
       <input type="number" id="latitude" className="input1" placeholder="Latitude"></input>
       <input type="number" id="longitude" className="input2" placeholder="Longitude"></input>
 
-      <button className="button" onClick={GetCep}>Acessar</button>
+      <button type="button" className="button" onClick={GetCep}>Acessar</button>
     </div>
   )
 }
