@@ -21,13 +21,11 @@ body{
 
 .Header{
   background-color:var(--azul);
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 33vw;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 70px;
   font-family: var(--fonte);
-  grid-template-columns: 75% 1fr 1fr;
 }
 
 .logo{
@@ -37,10 +35,19 @@ body{
   font: 50px;
   font-family: Inter;
   font-size: 35px;
-  font-weight: 800;
+  font-weight: 800px;
   line-height: 60.51px;
   text-align: left;
+}
 
+.menuHeader{
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: space-around;
+  text-align: right;
+  padding-bottom: 20px;
+  margin-right: 20px;
 }
 
 .lista{
@@ -292,10 +299,9 @@ margin-bottom: 25px;
 
     .footer{
       margin-top: 150px;
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-columns:85% 1fr 0.5fr;
-      width: auto;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
       height: 70px;
       gap: 0px;
       opacity: 0px;
@@ -303,8 +309,68 @@ margin-bottom: 25px;
       list-style-type: none;
       text-align: right;
       align-items: center;
-      
     }
+
+    .menuFooter{
+      display: flex;
+      width: auto;
+      height: auto;
+      justify-content: space-around;
+      text-align: right;
+      padding-right: 20px;
+    }
+
+    .itemFooter{
+      margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 1200px){
+      .sectionTitulo{
+        font-size: 30px;   
+      }
+      .imagem1{
+        width: 150px;
+      }
+      .tituloCep{
+        font-size: 30px;
+      }
+      .imagem2{
+        width: 100px;
+      }
+      
+  .resuldadoCepSup{
+    width: 80%;
+    height: 72px;
+    font-size: 12px;
+  }
+
+  .resuldadoCepInf{
+    width: 80%;
+    height: 72px;
+    font-size: 12px;
+  }
+
+  .inputResultCepInf{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    font-size: 10px;
+    color: black;
+  }
+  .imagem3{
+    width: 100px;
+  }
+  .tituloCep{
+    font-size: 30px;
+  }
+  .inputResultClima{
+    font-size: 15px;
+  }
+
+
+      
+      }
 
   
 

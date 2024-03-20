@@ -7,9 +7,13 @@ import imagemClima3 from './imagem3.svg';
 function Header(){
    return(
     <div className="Header">
-      <h1 className="logo">DncWeather</h1>
-      <li className="lista">Endereços</li>
-      <li className="lista">Previsão do tempo</li>
+      <div>
+       <h1 className="logo">DncWeather</h1>
+      </div>
+      <div className="menuHeader">
+       <li className="lista">Endereços</li>
+       <li className="lista">Previsão do tempo</li>
+      </div>
     </div>
    )
 }
@@ -41,21 +45,44 @@ async function GetCep(){
        try{
         const responseCep = await fetch (`https://viacep.com.br/ws/${cep}/json/`);
         const dataCep = await responseCep.json();
-
+           
         const responseClima = await fetch (`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m`);
         const dataClima = await responseClima.json();
 
+        meu_callback(dataCep);
 
-        document.getElementById('rua').value = dataCep.logradouro;
-        document.getElementById('bairro').value = dataCep.bairro;
-        document.getElementById('localidade').value = dataCep.localidade;
+       
         document.getElementById('temperatura').value = (("Previsão de tempo de acordo com a região: ") + (dataClima.current.temperature_2m) + ("°C"));
         window.location.href='#ancora';
+
        } catch (erro){
-        alert(erro.menssage);
+        alert("Latitude ou longitude incorreto!!!");
        } 
       } 
 }
+
+//Função que verifica se CEP existe
+function meu_callback(dataCep) {
+  if (!("erro" in dataCep)) {
+        document.getElementById('rua').value = dataCep.logradouro;
+        document.getElementById('bairro').value = dataCep.bairro;
+        document.getElementById('localidade').value = dataCep.localidade;
+  } 
+  else {
+      limpa_formulário_cep();
+      return alert("CEP não encontrado.");
+  }
+}
+
+//Função para limpar formulário
+function limpa_formulário_cep() {
+  document.getElementById('rua').value=("");
+  document.getElementById('bairro').value=("");
+  document.getElementById('localidade').value=("");
+
+}
+
+
 //Função formulário section
 function Formulario(){
   return (
@@ -83,7 +110,7 @@ function TituloResultadoCep(){
   return (
     <div id="ancora" className="tituloResultadoCep">
         <h1 className="tituloCep">Resultado da busca por CEP:</h1>
-        <img src={imagemCep}/>
+        <img className="imagem2" src={imagemCep}/>
     </div>
   )
 }
@@ -111,7 +138,7 @@ function TituloResultadoClima(){
   return (
     <div className="tituloResultadoClima">
         <h1 className="tituloCep">Previsão do tempo na região:</h1>
-        <img src={imagemClima3}/>
+        <img className="imagem3" src={imagemClima3}/>
     </div>
   )
 }
@@ -129,8 +156,11 @@ function ResultadoClima(){
 function Footer(){
   return(
     <div className="footer">
-             <li>Termos de uso</li>
-             <li>Política e Privacidade </li>
+       <div></div>
+       <div className="menuFooter">
+            <li className="itemFooter">Termos de uso</li>
+            <li className="itemFooter">Política e Privacidade </li>  
+       </div>  
     </div>
   )
 }
