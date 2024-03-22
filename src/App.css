@@ -323,6 +323,11 @@ margin-bottom: 25px;
       .sectionTitulo{
         font-size: 30px;   
       }
+      
+      .lista{
+        font-size: 12px;
+      }
+
       .imagem1{
         width: 150px;
       }
@@ -333,36 +338,36 @@ margin-bottom: 25px;
         width: 100px;
       }
       
-  .resuldadoCepSup{
-    width: 80%;
-    height: 72px;
-    font-size: 12px;
-  }
-
-  .resuldadoCepInf{
-    width: 80%;
-    height: 72px;
-    font-size: 12px;
-  }
-
-  .inputResultCepInf{
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    height: 72px;
-    font-size: 10px;
-    color: black;
-  }
-  .imagem3{
-    width: 100px;
-  }
-  .tituloCep{
-    font-size: 30px;
-  }
-  .inputResultClima{
-    font-size: 15px;
-  }
+      .resuldadoCepSup{
+        width: 80%;
+        height: 72px;
+        font-size: 12px;
       }
+
+      .resuldadoCepInf{
+        width: 80%;
+        height: 72px;
+        font-size: 12px;
+      }
+
+      .inputResultCepInf{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        height: 72px;
+        font-size: 10px;
+        color: black;
+      }
+      .imagem3{
+        width: 100px;
+      }
+      .tituloCep{
+        font-size: 30px;
+      }
+      .inputResultClima{
+        font-size: 15px;
+      }
+    }
 
   
 
