@@ -59,6 +59,12 @@ body{
   font-weight: 800;
   line-height: 30.26px;
   text-align: left;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 .section{
@@ -304,6 +310,11 @@ margin-bottom: 25px;
       padding-right: 20px;
     }
 
+    .menuFooter .itemFooter:first-child{
+      border-right: 2px solid white;
+      padding-right: 20px;
+  }
+
     .itemFooter{
       margin-right: 20px;
     }
@@ -351,9 +362,6 @@ margin-bottom: 25px;
   .inputResultClima{
     font-size: 15px;
   }
-
-
-      
       }
 
   

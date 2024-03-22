@@ -11,8 +11,8 @@ function Header(){
        <h1 className="logo">DncWeather</h1>
       </div>
       <div className="menuHeader">
-       <li className="lista">Endereços</li>
-       <li className="lista">Previsão do tempo</li>
+       <li className="lista"> <a href="">Endereços</a> </li>
+       <li className="lista"> <a href="">Previsão do tempo</a></li>
       </div>
     </div>
    )
@@ -52,7 +52,7 @@ async function GetCep(){
         meu_callback(dataCep);
 
        
-        document.getElementById('temperatura').value = (("Previsão de tempo de acordo com a região: ") + (dataClima.current.temperature_2m) + ("°C"));
+        document.getElementById('temperatura').value = (("Previsão de acordo com a coordenada: ") + (dataClima.current.temperature_2m) + ("°C"));
         window.location.href='#ancora';
 
        } catch (erro){
@@ -158,8 +158,8 @@ function Footer(){
     <div className="footer">
        <div></div>
        <div className="menuFooter">
-            <li className="itemFooter">Termos de uso</li>
-            <li className="itemFooter">Política e Privacidade </li>  
+            <li className="itemFooter"> <a href="">Termos de uso</a> </li>
+            <li className="itemFooter"> <a href="">Política e Privacidade</a></li> 
        </div>  
     </div>
   )
