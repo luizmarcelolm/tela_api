@@ -52,7 +52,7 @@ async function GetCep(){
         meu_callback(dataCep);
 
        
-        document.getElementById('temperatura').value = (("Previsão de acordo com a coordenada: ") + (dataClima.current.temperature_2m) + ("°C"));
+        document.getElementById('temperatura').value = (("Previsão de acordo com a coordenada é de ") + (dataClima.current.temperature_2m) + ("°C"));
         window.location.href='#ancora';
 
        } catch (erro){
