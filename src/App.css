@@ -325,23 +325,23 @@ margin-bottom: 25px;
       }
 
       .containner{
-        width: 480px;
+        width: 450px;
       }
 
       .label{
-        width: 460px;
+       font-size: 18px;
       }
 
       .input{
-        width: 460px;
+        width: 100%;
       }
 
       .input1{
-        width: 210px;
+        width: 200px;
       }
 
       .input2{
-        width: 210px;
+        width: 200px;
       }
 
       .button{
