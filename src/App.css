@@ -321,7 +321,31 @@ margin-bottom: 25px;
 
     @media only screen and (max-width: 1200px){
       .sectionTitulo{
-        font-size: 30px;   
+        font-size: 25px;   
+      }
+
+      .containner{
+        width: 480px;
+      }
+
+      .label{
+        width: 460px;
+      }
+
+      .input{
+        width: 460px;
+      }
+
+      .input1{
+        width: 210px;
+      }
+
+      .input2{
+        width: 210px;
+      }
+
+      .button{
+        width: 100%;
       }
       
       .lista{
@@ -329,7 +353,7 @@ margin-bottom: 25px;
       }
 
       .imagem1{
-        width: 150px;
+        width: 120px;
       }
       .tituloCep{
         font-size: 30px;
