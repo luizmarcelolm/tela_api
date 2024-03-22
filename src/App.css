@@ -320,6 +320,7 @@ margin-bottom: 25px;
     }
 
     @media only screen and (max-width: 1200px){
+            
       .sectionTitulo{
         font-size: 25px;   
       }
@@ -394,6 +395,11 @@ margin-bottom: 25px;
       }
     }
 
+    @media only screen and (max-width: 900px){
+      .sectionTitulo{
+        font-size: 20px;  
+      }
+    }
   
 
 

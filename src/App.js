@@ -22,11 +22,11 @@ function Header(){
 function Section(){
   return(
     <div className="section">
-         <h1 className="sectionTitulo">Descubra Mais com Precisão:<br></br> 
+      <h1 className="sectionTitulo">Descubra Mais com Precisão:<br></br> 
           Previsões do Tempo e endereços <br></br>
           em tempo real.
         </h1>
-        <img className="imagem1" src={imagemClima}/>
+        <img className="imagem1" src={imagemClima}/>          
     </div>
   )
 }
