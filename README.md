@@ -18,7 +18,7 @@
 ![image](https://github.com/luizmarcelolm/tela_api/assets/109484017/29f132f3-f3b7-4715-9d1c-65191d65e6c8)
 ![image](https://github.com/luizmarcelolm/tela_api/assets/109484017/551bfa4c-eaa2-45da-a0ee-547e4dd9539c)
 
-# Caso CEP, latitude ou longitude sejam invalidos será mostrada uma mensagem de alerta.
+# Caso CEP, latitude ou longitude sejam inválidos será mostrada uma mensagem de alerta.
 ![image](https://github.com/luizmarcelolm/tela_api/assets/109484017/b46eb7fd-8416-4eb9-9df7-9956e8ca1b51)
 ![image](https://github.com/luizmarcelolm/tela_api/assets/109484017/36a3c956-1913-4175-86a5-4b96d8a570e5)
 ![image](https://github.com/luizmarcelolm/tela_api/assets/109484017/0262b68a-680c-4dfb-bd57-5fbbd225d963)
