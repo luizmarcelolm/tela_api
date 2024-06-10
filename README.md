@@ -1,4 +1,4 @@
-# Link do site disponibilizado: https://tela-api.vercel.app/
+# Deploy do projeto: https://tela-api.vercel.app/
 
 # Para criação deste projeto foi utilizado as seguintes tecnologias:
 * JAVASCRIPT
